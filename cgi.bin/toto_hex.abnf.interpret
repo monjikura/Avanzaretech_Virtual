@@ -1,0 +1,106 @@
+
+ ;; This document describes TOML's syntax,
+ ;; using the ABNF format (defined in 
+ ;; RFC 5234 --  
+ ;; 
+ ;; All valid TOML documents will match this
+ ;; description, however certain 
+ ;; invalid documents would need to be rejected
+ ;; as per the semantics described 
+ ;; in the supporting text description. 
+  
+ ;; It is possible to try this grammar
+ ;; interactively, using instaparse. 
+ ;; http://instaparse.mojombo.com/ 
+ ;; 
+ ;; To do so, in the lower right, click on
+ ;; Options and change `:input-format` to 
+ ;; ':abnf'. Then paste this entire ABNF
+ ;; document into the grammar entry box 
+ ;; (above the options). Then you can type or
+ ;; paste a sample TOML document into 
+ ;; the beige box on the left. Tada! 
+  
+ ;; Overall Structure 
+  
+ toml = expression *( newline
+ expression )
+
+ expression =  ws [ comment ] 
+ expression =/ ws keyval ws [ comment ] 
+ expression =/ ws table ws [ comment ]
+
+ ;; Whitespace
+
+ ws = *wschar 
+ wschar =  %x20  ; Space 
+ wschar =/ %x09  ; Horizontal tab 
+  
+ ;; Newline 
+  
+ newline =  %x0A     ; LF 
+ newline =/ %x0D.0A  ; CRLF 
+  
+ ;; Comment 
+ 
+ comment-start-symbol = %x23 ; # 
+ non-ascii = %x80-D7FF / %xE000-10FFFF 
+ non-eol = %x09 / %x20-7F / non-ascii 
+  
+ comment = comment-start-symbol *
+ non-eol
+
+ ;; Key-Value pairs
+
+ keyval = key keyval-sep val
+
+ key = simple-key / dotted-key 
+ simple-key = quoted-key / unquoted-key
+
+ unquoted-key = 1*( ALPHA / DIGIT / %x
+ 2D / %x5F ) ; A-Z / a-z / 0-9 / - / _ 
+ quoted-key = basic-string /
+ literal-string 
+ dotted-key = simple-key 1*( dot-sep
+ simple-key )
+
+ dot-sep   = ws %x2E ws  ; . Period 
+ keyval-sep = ws %x3D ws ; =
+
+ val = string / boolean / array /
+ inline-table / date-time / float /
+ integer
+
+ ;; String
+
+ string = ml-basic-string /
+ basic-string / ml-literal-string /
+ literal-string
+
+ ;; Array Table
+
+ array-table = array-table-open key
+ array-table-close
+
+ array-table-open  = %x5B.5B ws  ;
+  [[ Double left square bracket 
+ array-table-close = ws %x5D.5D  ;
+  ]] Double right square bracket
+
+ ;; Built-in ABNF terms, reproduced here
+ for clarity
+
+ ALPHA = %x41-5A / %x61-7A ; A-Z / a-z 
+ DIGIT = %x30-39 ; 0-9 
+ HEXDIG = DIGIT / "A" / "B" / "C" / "D" / "E" /
+ "F"
+
+ 
+
+ 
+
+ 
+ 
+ ;; Overall Structure
+
+ 
