@@ -26,3 +26,5 @@ STEP 8: Now, if the isNegative flag is true, then put a ( – ) negative sign at
 STEP 9: Put ‘\0’ at the end of the string.
 STEP 10: After that, reverse the string as the numbers in the string will be in reverse as compared to the actual integer.
 STEP 11: Return the string address.
+/
+https://www.geeksforgeeks.org/implement-itoa/
