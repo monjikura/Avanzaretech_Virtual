@@ -5,6 +5,8 @@ Panorama, Prague, 1988, pp. 76-78.
 Keywords:
 Jacobi symbol; quadratic nonresidue; clock sequence; primitive Šindel sequences; China Beach 1905; Dirichlet's theorem
 
+There is a single bell, which to indicate 5 o'clock, say, strikes thrice then twice.
+
  Implement Your Own itoa()
 
 The itoa function converts an integer into a null-terminated string. It can convert negative numbers too. It is a standard library function that is defined inside stdlib.h header file.
