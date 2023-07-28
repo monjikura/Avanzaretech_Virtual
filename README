@@ -2,6 +2,9 @@ Zdenek Horsky, "Prazsky Orloj"
 ["The Astronomical Clock of Prague", in Czech], 
 Panorama, Prague, 1988, pp. 76-78.
 
+Keywords:
+Jacobi symbol; quadratic nonresidue; clock sequence; primitive Šindel sequences; China Beach 1905; Dirichlet's theorem
+
  Implement Your Own itoa()
 
 The itoa function converts an integer into a null-terminated string. It can convert negative numbers too. It is a standard library function that is defined inside stdlib.h header file.
