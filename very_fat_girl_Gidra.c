@@ -1,5 +1,5 @@
 
- # binary heap re_alloc with qword pointer
+ # binary heap re_alloc with qword pointer 
 
  void _start(void) // offset 0x40 Snowman
 
