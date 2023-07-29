@@ -1,0 +1,42 @@
+
+ Note that this is NOT restricted growth
+ transform of A239968, which is A305800.
+ 
+ 558 bytes in diff --("measurands")
+ ( arctan.h mistake )
+ ....refer 64 bits mistake OEIS A296073
+ ...go NUCLEAR at 0x0013
+
+ /* IFR mod flight-level $2500 */
+
+ A PCAP file always starts with a 24 byte
+ header, referred to as pcap_file_header in the
+ libpcap source code, which contains the
+ following fields: Magic Number (4 bytes) =
+ d4 c3 b2 a1.
+ Version Major (2 bytes) = 02 00.
+ Version Minor (2 bytes) = 04 00.
+
+ ld.lld: error: pci_bits:27: unclosed quote
+ ...using objdump
+
+ ...now...what is "snap length"...?...??...
+
+tcpdump -r pci_bits -w pci_output -C 768
+reading from file pci_bits,
+link-type EN10MB (Ethernet),
+snapshot length 65535...
+
+ example ifconfig wlan0 - wlan1 ( wifi ) ::qRN
+
+ 172.217.174.170:443 udp
+ kul08s11-in-f10.1e100.net
+ ...total file size on send is c.41 kb
+ ...time-stamp is 07-29 15:27:27-31 ( $4 ) <
+
+ 5 div 18 != int(0090)<< 01 mistake....! !!
+
+ ....what is sharded verticals 44 Hamming
+ weight implement as is c23...?....??...
+
+
