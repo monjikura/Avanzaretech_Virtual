@@ -2,3 +2,4 @@
 != 0o0027
 cofr last mod is eigen 2 / 421
 blame # 2024
+dup2(infd, 0);
