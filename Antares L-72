@@ -10,3 +10,7 @@ dup2(infd, 0);
 // 1003.01 div 99 trillion
    equates 1.0131414e-11 on
    Google calc....
+time datum 08:16 AM August 4, 2023
+0xE74C :: 0x0AE3
+hex-dump
+250C 3D43 0759 3133
