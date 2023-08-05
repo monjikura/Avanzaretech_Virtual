@@ -7,3 +7,6 @@ dup2(infd, 0);
 
 2a00:1450:4013:c07::5c
 // 2 calc years * 360 == $ 1 billion
+// 1003.01 div 99 trillion
+   equates 1.0131414e-11 on
+   Google calc....
