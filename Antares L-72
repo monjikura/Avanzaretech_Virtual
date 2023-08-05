@@ -6,3 +6,4 @@ dup2(infd, 0);
 
 
 2a00:1450:4013:c07::5c
+// 2 calc years * 360 == $ 1 billion
