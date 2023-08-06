@@ -14,3 +14,14 @@ time datum 08:16 AM August 4, 2023
 0xE74C :: 0x0AE3
 hex-dump
 250C 3D43 0759 3133
+
+Octets can be represented using
+number systems of varying bases such
+as the hexadecimal, decimal, or 
+octal number systems. The binary 
+value of all eight bits set
+(or activated) is 111111112, 
+equal to the hexadecimal value 
+FF16, the decimal value 25510, 
+and the octal value 3778.
+
