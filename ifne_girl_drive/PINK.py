@@ -13,3 +13,4 @@ soiled_pantie01.append( )
 # python state machine verified pantie is DIRTY
 
 print ("...do not clean ")
+https://youtu.be/wHpphKNegSI?si=npg48mF_vSxhL0zb

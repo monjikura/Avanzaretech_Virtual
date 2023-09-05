@@ -1,0 +1,12 @@
+
+ :ea::raw_open:
+ ils mpv.h.patch       
+ Sector offset supplied is larger than
+ disk image (maximum: 0)
+ LOCALIZER OFFSET- An angular offset of the
+ localizer aligned within 3° of the
+ runway alignment...
+
+ /dev/block/platform/bootdevice/by-name/cache
+
+ Error stat(ing) image file (raw_open:
