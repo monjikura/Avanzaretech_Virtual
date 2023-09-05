@@ -1,0 +1,34 @@
+
+ pm uninstall -k --user 0
+
+ android.os.DeadObjectException:
+ Transaction failed on small parcel;
+ remote process probably died
+
+ at android.os.BinderProxy.transactNative(
+ Native Method)
+
+ at android.os.BinderProxy.transact(
+ Binder.java:811)
+
+ at android.os.BinderProxy.shellCommand(
+ Binder.java:870)
+
+ at com.android.commands.pm.Pm.runShellCommand(
+ Pm.java:342)
+
+ at com.android.commands.pm.Pm.runUninstall(
+ Pm.java:756)
+
+ at com.android.commands.pm.Pm.run(
+ Pm.java:182)
+
+ at com.android.commands.pm.Pm.main(
+ Pm.java:115)
+
+ at com.android.internal.os.....
+ .RuntimeInit.nativeFinishInit(Native Method)
+
+ at com.android.internal.os.RuntimeInit.main(
+ RuntimeInit.java:403)
+
